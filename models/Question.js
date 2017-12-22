@@ -20,7 +20,7 @@ class Question{
 
   insert(){
     const self = this
-    const row = INSERT INTO questions (id, content) VALUES (?, ?)
+    const row = `INSERT INTO questions (id, content) VALUES (?, ?)``
     return new Promise(function(resolve){
 
     })
