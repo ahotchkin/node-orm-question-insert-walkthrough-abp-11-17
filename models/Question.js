@@ -20,10 +20,21 @@ class Question{
 
   insert(){
     const self = this
+    const row = INSERT INTO questions (id, content) VALUES (?, ?)
     return new Promise(function(resolve){
-      
+
     })
   }
 }
 
 module.exports = Question;
+
+
+// const sql = `INSERT INTO users (name, age) VALUES (?, ?)`
+//     console.log(`Inserting user ${self.name} into database...`)
+//
+//     return new Promise(function(resolve){
+//       db.run(sql, [self.name, self.age], function(){
+//         console.log(`...user ${this.lastID} inserted into database`)
+//         self.id = this.lastID
+//         resolve(self)
