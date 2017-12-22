@@ -18,6 +18,9 @@ class Question{
     this.content = content
   }
 
+  insert(){
+    
+  }
 }
 
 module.exports = Question;
